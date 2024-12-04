@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Kalkulator Matriks</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h1>Kalkulator Matrik </h1> 
+   <h2>Naelul Kirom Indalloh</h2> <!-- Input Baris dan Kolom --> 
+   <div class="input-section"> 
+    <div class="input-group"> <label for="rows">Jumlah Baris:</label> 
+     <input type="number" id="rows" min="1" value="2"> 
+    </div> 
+    <div class="input-group"> <label for="cols">Jumlah Kolom:</label> 
+     <input type="number" id="cols" min="1" value="2"> 
+    </div> <button onclick="generateMatrices()">Buat Matriks</button> 
+   </div> <!-- Matriks Input --> 
+   <div id="matrix-a" class="matrix"> 
+    <h3>Matriks A</h3> <!-- Elemen input matriks A akan di-generate lewat JavaScript --> 
+   </div> 
+   <div id="matrix-b" class="matrix"> 
+    <h3>Matriks B</h3> <!-- Elemen input matriks B akan di-generate lewat JavaScript --> 
+   </div> <!-- Tombol Operasi --> 
+   <div class="operations"> <button onclick="calculate('+')">+</button> <button onclick="calculate('-')">−</button> <button onclick="calculate('x')">×</button> 
+   </div> <!-- Hasil Matriks --> 
+   <div id="result"> 
+    <h2>Hasil:</h2> 
+    <div id="result-matrix"> <!-- Matriks hasil akan di-generate lewat JavaScript --> 
+    </div> 
+   </div> 
+  </div> <!-- Tambahkan file script JavaScript --> 
+  <script src="script.js"></script> 
+ </body>
+</html>
